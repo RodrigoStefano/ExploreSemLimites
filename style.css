@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Mulish', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+#page{
+    max-width: 76.8rem;
+    margin: 0 auto;
+    background-color: #F9F4FB;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0px 3.5rem;
+}
+header img{
+    width: 100%;
+}
+
+header h1{
+    color: #B52184;
+    font-size: 3.2rem;   
+    margin-top: 1.7rem;
+}
+header p{
+    font-weight: 600;
+    font-size: 2.0rem;
+    margin: 5px auto 3.5rem ;
+}
+header #buttonProx{
+    margin-bottom: 9.0rem;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(./images/Group\ 23.png);
+    height: 10.5rem;
+    width: 5.85rem;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    color: #B52184;
+}
+
+p{
+    color: #312D64;
+}
+
+main #topics{
+    background: rgb(52,49,147);
+    background: linear-gradient(90deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    padding: 5.0rem 4.0rem;
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    gap: 5.0rem;
+}
+#topics .topic{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 2.0rem;
+    padding: 2.65rem;
+}
+.topic img{
+    width: fit-content;
+    margin-bottom: 4.0rem;
+}
+main form{
+    padding: 5.0rem 4.0rem;
+}
+form h1{
+    margin-bottom: 4.0rem;
+}
+form .input-wrapper {
+    margin-top: 2.4rem;
+    display: flex;
+}
+/*
+.input-wrapper #email{
+    background-image: url(./images/Vector.png);
+    background-size: 20px 20px ;
+    background-repeat: no-repeat;
+    background-position: 10px left;
+}
+*/
+
+.input-wrapper input, .input-wrapper textarea{
+    padding: 1.4rem 1.2rem;
+    line-height: 100%;
+    font-size: 1.6rem;
+    color: #312D64;
+    flex: 1;
+    height: 4.8rem;
+    border-radius: 16px;
+    border: 1px solid #312D64;
+}
+.input-wrapper textarea{
+    height: 12.6rem;
+    resize: none;
+    margin-bottom: 2.4rem;
+}
+form button{
+    height: 4.5rem;
+    width: 15.0rem;
+    background: rgb(52,49,147);
+    background: linear-gradient(90deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    color: #FFFFFF;
+    border-radius: 1.6rem;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition-duration: 0.3s;
+}
+form button:hover{
+    background: rgb(52,49,147);
+    background: linear-gradient(90deg, rgb(68, 64, 187) 0%, rgb(62, 57, 133) 100%);
+    cursor: pointer;
+}
+
+footer{
+    background: rgb(52,49,147);
+    background: linear-gradient(90deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 100%);
+    height: 7.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.0rem;
+    font-weight: 600;    
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+@media(min-width: 770px){
+    #page{
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #F9F4FB;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: justify;
+        justify-content: space-evenly;
+        margin: 0px 3.5rem;
+    }
+    header #titlePage{
+        margin-left: 10.0rem;
+    }
+    header h1{
+        margin-top: 50%;
+        color: #B52184;
+        font-size: 5.8rem;   
+    }
+    header p{
+        font-weight: 600;
+        font-size: 3.2rem;
+        margin: 0.8rem auto 10.8rem ;
+    }
+    header img{
+        width: 100%;
+        margin-bottom: 10.0rem;
+    }
+    header #buttonProx{
+        margin-bottom: 0rem;
+    }
+
+    main #topics{
+        padding: 5.0rem 11.0rem;
+        display: flex;
+        gap: 5.0rem;
+    }
+    #topics .topic h1{
+        font-size: 3.5rem;
+    }
+    #topics .topic p{
+        font-size: 2.0rem;
+    }
+
+    main #entreEmContato{
+        background-image: url(./images/image\ 11976.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    main form{
+        padding: 9.5rem 11.0rem;
+        width: 50%;
+    }
+    form h1{
+        margin-bottom: 3.0rem;
+        font-size: 4.2rem;
+    }
+}
