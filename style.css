@@ -7,6 +7,7 @@
 :root{
     font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -39,15 +40,12 @@ header p{
     font-size: 2.0rem;
     margin: 5px auto 3.5rem ;
 }
-header #buttonProx{
-    margin-bottom: 9.0rem;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: url(./images/Group\ 23.png);
-    height: 10.5rem;
+header #titlePage a img{
     width: 5.85rem;
-    border: none;
-    cursor: pointer;
+    height: 10.5rem;
+    margin-bottom: 9.0rem;
 }
+
 h1{
     color: #B52184;
 }
@@ -85,14 +83,6 @@ form .input-wrapper {
     margin-top: 2.4rem;
     display: flex;
 }
-/*
-.input-wrapper #email{
-    background-image: url(./images/Vector.png);
-    background-size: 20px 20px ;
-    background-repeat: no-repeat;
-    background-position: 10px left;
-}
-*/
 
 .input-wrapper input, .input-wrapper textarea{
     padding: 1.4rem 1.2rem;
